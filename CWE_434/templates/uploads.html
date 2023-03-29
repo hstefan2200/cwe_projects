@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block content %}
+{% for img in img_list %}
+    <li class="list-group-item">
+        <a href= {{ url_for('uploaded_file', filename=img) }}>{{ img }} </a>
+    </li>
+{% endfor %}
+{% endblock content %}
